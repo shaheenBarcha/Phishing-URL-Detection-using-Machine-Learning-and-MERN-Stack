@@ -1,0 +1,176 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.contact-us-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-content {
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-us-title {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+
+.error-message {
+  margin-top: 10px;
+  color: #f00;
+  font-size: 14px;
+  text-align: center;
+}
+.s a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.s a span {
+  position: absolute;
+  display: block;
+}
+
+.contact-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.contact-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.contact-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.contact-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+/*Panels */
+contact-us-content {
+  width: 350px;
+  height: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-us-content {
+  /* Existing CSS properties */
+
+  animation: animateShadows 5s infinite;
+}
+
+@keyframes animateShadows {
+  0% {
+    box-shadow:
+      0 0 10px rgba(3, 233, 244, 0.6),
+      0 0 20px rgba(233, 3, 189, 0.6),
+      0 0 30px rgba(244, 3, 62, 0.6),
+      0 0 40px rgba(3, 244, 96, 0.6);
+  }
+
+  25% {
+    box-shadow:
+      0 0 10px rgba(244, 3, 62, 0.6),
+      0 0 20px rgba(3, 244, 96, 0.6),
+      0 0 30px rgba(3, 233, 244, 0.6),
+      0 0 40px rgba(233, 3, 189, 0.6);
+  }
+
+  50% {
+    box-shadow:
+      0 0 10px rgba(3, 244, 96, 0.6),
+      0 0 20px rgba(3, 233, 244, 0.6),
+      0 0 30px rgba(233, 3, 189, 0.6),
+      0 0 40px rgba(244, 3, 62, 0.6);
+  }
+
+   75% {
+    box-shadow:
+      0 0 10px rgba(233, 3, 189, 0.6),
+      0 0 20px rgba(244, 3, 62, 0.6),
+      0 0 30px rgba(3, 244, 96, 0.6),
+      0 0 40px rgba(3, 233, 244, 0.6);
+  }
+
+  100% {
+    box-shadow:
+      0 0 10px rgba(3, 233, 244, 0.6),
+      0 0 20px rgba(233, 3, 189, 0.6),
+      0 0 30px rgba(244, 3, 62, 0.6),
+      0 0 40px rgba(3, 244, 96, 0.6);
+  }
+}

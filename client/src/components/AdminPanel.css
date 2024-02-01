@@ -1,0 +1,229 @@
+/* AdminPanel.css */
+
+.admin-panel-header {
+  background-color: #223244;
+  padding: 20px;
+  color: #fff;
+}
+
+.admin-panel-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.admin-panel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.admin-panel-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  align-items: center;
+}
+
+.admin-panel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+
+}
+
+
+
+.Apanel:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.panel-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.panel-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.panel-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.panel-button:after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.panel-button:hover {
+  background-color: #03e9f4;
+  color: #000;
+}
+
+.admin-panel-footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #223244;
+  text-align: center;
+}
+
+.admin-panel-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logout-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.logout-button:after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.logout-button:hover {
+  background-color: #03e9f4;
+  color: #000;
+}
+
+/*Panels */
+.Apanel {
+  width: 400px;
+  height: 550px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.Apanel {
+  /* Existing CSS properties */
+
+  animation: animateShadows 5s infinite;
+}
+
+@keyframes animateShadows {
+  0% {
+    box-shadow:
+      0 0 10px rgba(3, 233, 244, 0.6),
+      0 0 20px rgba(233, 3, 189, 0.6),
+      0 0 30px rgba(244, 3, 62, 0.6),
+      0 0 40px rgba(3, 244, 96, 0.6);
+  }
+
+  25% {
+    box-shadow:
+      0 0 10px rgba(244, 3, 62, 0.6),
+      0 0 20px rgba(3, 244, 96, 0.6),
+      0 0 30px rgba(3, 233, 244, 0.6),
+      0 0 40px rgba(233, 3, 189, 0.6);
+  }
+
+  50% {
+    box-shadow:
+      0 0 10px rgba(3, 244, 96, 0.6),
+      0 0 20px rgba(3, 233, 244, 0.6),
+      0 0 30px rgba(233, 3, 189, 0.6),
+      0 0 40px rgba(244, 3, 62, 0.6);
+  }
+
+   75% {
+    box-shadow:
+      0 0 10px rgba(233, 3, 189, 0.6),
+      0 0 20px rgba(244, 3, 62, 0.6),
+      0 0 30px rgba(3, 244, 96, 0.6),
+      0 0 40px rgba(3, 233, 244, 0.6);
+  }
+
+  100% {
+    box-shadow:
+      0 0 10px rgba(3, 233, 244, 0.6),
+      0 0 20px rgba(233, 3, 189, 0.6),
+      0 0 30px rgba(244, 3, 62, 0.6),
+      0 0 40px rgba(3, 244, 96, 0.6);
+  }
+}

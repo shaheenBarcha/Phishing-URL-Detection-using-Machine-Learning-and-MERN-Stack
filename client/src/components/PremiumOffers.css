@@ -1,0 +1,231 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #0e0b0b;
+}
+
+header {
+  background-color: #223244;
+  padding: 20px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: box-shadow 0.3s;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+.premium:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+.pricing-card a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+
+}
+
+.pricing-card a span
+{
+  position: absolute;
+  display: block;
+}
+.pricing-card a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+  animation-delay: 0.25s; /* Added delay for the first line */
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.pricing-card a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.5s; /* Added delay for the second line */
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.pricing-card a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.75s; /* Added delay for the third line */
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.pricing-card a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 1s; /* Added delay for the fourth line */
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+.pricing-card {
+  /* Existing CSS properties */
+
+  animation: animateShadows 5s infinite;
+}
+
+@keyframes animateShadows {
+  0% {
+    box-shadow:
+      0 0 10px rgba(3, 233, 244, 0.6),
+      0 0 20px rgba(233, 3, 189, 0.6),
+      0 0 30px rgba(244, 3, 62, 0.6),
+      0 0 40px rgba(3, 244, 96, 0.6);
+  }
+
+  25% {
+    box-shadow:
+      0 0 10px rgba(244, 3, 62, 0.6),
+      0 0 20px rgba(3, 244, 96, 0.6),
+      0 0 30px rgba(3, 233, 244, 0.6),
+      0 0 40px rgba(233, 3, 189, 0.6);
+  }
+
+  50% {
+    box-shadow:
+      0 0 10px rgba(3, 244, 96, 0.6),
+      0 0 20px rgba(3, 233, 244, 0.6),
+      0 0 30px rgba(233, 3, 189, 0.6),
+      0 0 40px rgba(244, 3, 62, 0.6);
+  }
+
+   75% {
+    box-shadow:
+      0 0 10px rgba(233, 3, 189, 0.6),
+      0 0 20px rgba(244, 3, 62, 0.6),
+      0 0 30px rgba(3, 244, 96, 0.6),
+      0 0 40px rgba(3, 233, 244, 0.6);
+  }
+
+  100% {
+    box-shadow:
+      0 0 10px rgba(3, 233, 244, 0.6),
+      0 0 20px rgba(233, 3, 189, 0.6),
+      0 0 30px rgba(244, 3, 62, 0.6),
+      0 0 40px rgba(3, 244, 96, 0.6);
+  }
+}
